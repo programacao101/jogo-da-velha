@@ -77,7 +77,7 @@ int main (void)
         }
         else if (grade[0][2] == grade[1][1] && grade[1][1] == grade[2][0]) // verifica se os caracteres na diagonal secundária são todos iguais
         {
-            if (grade[0][0] == 'X')
+            if (grade[0][2] == 'X')
             {
                 estado = 2; // jogador 1 (X) ganhou
             }
@@ -106,7 +106,7 @@ int main (void)
                 }
                 else if (grade[0][i] == grade[1][i] && grade[1][i] == grade[2][i]) // verifica se todos os caracteres na coluna i são iguais
                 {
-                    if (grade[i][0] == 'X')
+                    if (grade[0][i] == 'X')
                     {
                         estado = 2; // jogador 1 (X) ganhou
                     }
